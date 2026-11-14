@@ -1,0 +1,577 @@
+[
+  {
+    "id": "email_001",
+    "subject": "🚨 CRITICAL: Production Server Outage - Immediate Action Required",
+    "sender": "alerts@monitoring.company.com",
+    "sender_name": "System Monitoring",
+    "recipients": ["team@company.com", "oncall@company.com"],
+    "date": "2026-06-28T08:15:00Z",
+    "body": "ALERT: Our primary production server (prod-web-01) has gone down at 08:12 UTC. Services affected: Customer portal, API gateway, payment processing. Error: Connection timeout on port 443. Current uptime: 0%. All customer-facing services are down. Immediate action required. Please escalate to the infrastructure team NOW. ETA for resolution must be communicated to stakeholders within 15 minutes. Incident ticket: INC-2024-0628-001.",
+    "snippet": "ALERT: Primary production server prod-web-01 is DOWN. All customer-facing services affected...",
+    "has_attachments": false,
+    "attachments": [],
+    "thread_id": "thread_001",
+    "labels": ["INBOX", "UNREAD", "IMPORTANT"],
+    "analysis": {
+      "category": "Technical",
+      "priority": "Critical",
+      "sentiment": "urgent",
+      "summary": "Production server prod-web-01 is completely down since 08:12 UTC, affecting all customer-facing services including portal, API, and payments. Requires immediate escalation.",
+      "action_items": [
+        "Escalate to infrastructure team immediately",
+        "Communicate ETA to stakeholders within 15 minutes",
+        "Investigate connection timeout on port 443",
+        "Check incident ticket INC-2024-0628-001"
+      ],
+      "deadline": {
+        "text": "Stakeholder communication within 15 minutes",
+        "date": "2026-06-28T08:30:00Z",
+        "urgency": "immediate"
+      },
+      "meeting_detected": null,
+      "key_entities": ["prod-web-01", "INC-2024-0628-001", "Customer portal", "API gateway"],
+      "requires_response": true,
+      "estimated_time_to_handle": 60,
+      "confidence_score": 0.98,
+      "risk_level": "Critical",
+      "tags": ["outage", "production", "incident", "server"]
+    }
+  },
+  {
+    "id": "email_002",
+    "subject": "Meeting Invitation: AWS Hackathon Project Review - Thursday 2pm",
+    "sender": "sarah.johnson@company.com",
+    "sender_name": "Sarah Johnson",
+    "recipients": ["team@company.com"],
+    "date": "2026-06-27T14:30:00Z",
+    "body": "Hi Team,\n\nI'd like to schedule a project review for our AWS Hackathon submission. We need to go over the current progress, demo the working prototype, and discuss what's left before the deadline.\n\nDetails:\n- Date: Thursday, July 3rd, 2026\n- Time: 2:00 PM - 3:30 PM EST\n- Location: Conference Room B / Zoom link: https://zoom.us/j/123456789\n- Agenda: (1) Demo of Phase 1, (2) Phase 2 planning, (3) Risk assessment, (4) Final submission checklist\n\nPlease confirm your attendance by Wednesday EOD.\n\nBest,\nSarah Johnson\nProject Lead, Innovation Team",
+    "snippet": "Hi Team, I'd like to schedule a project review for our AWS Hackathon submission...",
+    "has_attachments": true,
+    "attachments": [{"name": "Hackathon_Agenda.docx", "size": 45000, "type": "application/docx"}],
+    "thread_id": "thread_002",
+    "labels": ["INBOX", "UNREAD"],
+    "analysis": {
+      "category": "Meeting",
+      "priority": "High",
+      "sentiment": "professional",
+      "summary": "Meeting invitation for AWS Hackathon project review on July 3rd at 2 PM EST. Agenda includes Phase 1 demo, Phase 2 planning, and final submission checklist.",
+      "action_items": [
+        "Confirm attendance by Wednesday EOD",
+        "Prepare Phase 1 demo",
+        "Review agenda attachment"
+      ],
+      "deadline": {
+        "text": "Confirm attendance by Wednesday EOD",
+        "date": "2026-07-02T17:00:00Z",
+        "urgency": "medium"
+      },
+      "meeting_detected": {
+        "title": "AWS Hackathon Project Review",
+        "date": "2026-07-03",
+        "start_time": "14:00",
+        "end_time": "15:30",
+        "timezone": "EST",
+        "location": "Conference Room B / Zoom",
+        "attendees": ["sarah.johnson@company.com", "team@company.com"],
+        "agenda": ["Demo of Phase 1", "Phase 2 planning", "Risk assessment", "Final submission checklist"],
+        "requires_confirmation": true
+      },
+      "key_entities": ["Sarah Johnson", "AWS Hackathon", "Conference Room B"],
+      "requires_response": true,
+      "estimated_time_to_handle": 10,
+      "confidence_score": 0.95,
+      "risk_level": "Low",
+      "tags": ["meeting", "hackathon", "aws", "project-review"]
+    }
+  },
+  {
+    "id": "email_003",
+    "subject": "Project Update: Phase 2 Milestones & Deliverables",
+    "sender": "michael.chen@company.com",
+    "sender_name": "Michael Chen",
+    "recipients": ["leadership@company.com"],
+    "date": "2026-06-27T10:00:00Z",
+    "body": "Dear Leadership Team,\n\nI'm pleased to share the Phase 2 milestone update for Project Phoenix.\n\nCompleted Milestones:\n✅ Database schema redesigned (completed June 20)\n✅ API authentication layer implemented\n✅ Initial UI mockups approved\n\nIn Progress:\n🔄 Backend microservices migration (65% complete)\n🔄 Performance testing (starting next week)\n\nUpcoming Milestones:\n📅 July 10: Microservices migration complete\n📅 July 20: Performance benchmarks achieved\n📅 August 1: User acceptance testing\n📅 August 15: Production deployment\n\nCurrent budget utilization: $892,000 / $1,200,000 (74%)\nTeam velocity: 42 story points/sprint (target: 40)\n\nNo blockers at this time. The project is on track for the August 15 production deployment.\n\nBest regards,\nMichael Chen\nSenior Project Manager",
+    "snippet": "Phase 2 milestone update for Project Phoenix. Microservices migration 65% complete...",
+    "has_attachments": true,
+    "attachments": [{"name": "Phase2_Milestones.xlsx", "size": 128000, "type": "application/xlsx"}],
+    "thread_id": "thread_003",
+    "labels": ["INBOX"],
+    "analysis": {
+      "category": "Project Update",
+      "priority": "Medium",
+      "sentiment": "positive",
+      "summary": "Project Phoenix Phase 2 is on track. Microservices migration is 65% complete. Key milestones: full migration by July 10, production deployment August 15. Budget at 74% utilization.",
+      "action_items": [
+        "Review milestone attachment",
+        "Note upcoming July 10 microservices completion date",
+        "Monitor budget utilization (currently 74%)"
+      ],
+      "deadline": {
+        "text": "Production deployment August 15",
+        "date": "2026-08-15",
+        "urgency": "low"
+      },
+      "meeting_detected": null,
+      "key_entities": ["Project Phoenix", "Michael Chen", "August 15"],
+      "requires_response": false,
+      "estimated_time_to_handle": 5,
+      "confidence_score": 0.92,
+      "risk_level": "Low",
+      "tags": ["project-update", "milestone", "phoenix"]
+    }
+  },
+  {
+    "id": "email_004",
+    "subject": "APPROVAL REQUIRED: Q3 Budget Increase - $150,000 Additional Funding",
+    "sender": "finance@company.com",
+    "sender_name": "Finance Department",
+    "recipients": ["executives@company.com", "budget-committee@company.com"],
+    "date": "2026-06-26T16:45:00Z",
+    "body": "Dear Executive Team,\n\nThis is a formal request for approval of additional Q3 budget allocation.\n\nRequest Details:\n- Department: Engineering & Infrastructure\n- Amount Requested: $150,000\n- Purpose: Cloud infrastructure scaling + new AI/ML tools\n- Breakdown:\n  • AWS compute expansion: $80,000\n  • AI/ML tooling licenses: $45,000\n  • Security compliance tools: $25,000\n\nJustification: Current infrastructure is at 87% capacity during peak hours. Without this investment, we risk service degradation affecting 15,000+ enterprise customers. ROI projection: 3.2x within 12 months.\n\nApproval deadline: June 30, 2026 (End of Q2 planning cycle)\n\nPlease review the attached financial analysis and respond with your approval or request a meeting to discuss.\n\nRegards,\nFinance Department",
+    "snippet": "Formal request for $150,000 additional Q3 budget. AWS compute, AI tools, security compliance...",
+    "has_attachments": true,
+    "attachments": [
+      {"name": "Q3_Budget_Analysis.xlsx", "size": 256000, "type": "application/xlsx"},
+      {"name": "ROI_Projection.pdf", "size": 180000, "type": "application/pdf"}
+    ],
+    "thread_id": "thread_004",
+    "labels": ["INBOX", "UNREAD", "IMPORTANT"],
+    "analysis": {
+      "category": "Finance",
+      "priority": "High",
+      "sentiment": "formal",
+      "summary": "Formal approval request for $150K Q3 budget increase for AWS compute ($80K), AI tools ($45K), and security ($25K). Deadline June 30. Infrastructure at 87% capacity, affecting 15K+ customers.",
+      "action_items": [
+        "Review Q3_Budget_Analysis.xlsx",
+        "Review ROI_Projection.pdf",
+        "Approve or request meeting before June 30, 2026",
+        "Consult with budget committee"
+      ],
+      "deadline": {
+        "text": "Approval deadline: June 30, 2026",
+        "date": "2026-06-30",
+        "urgency": "high"
+      },
+      "meeting_detected": null,
+      "key_entities": ["Finance Department", "$150,000", "June 30", "Q3"],
+      "requires_response": true,
+      "estimated_time_to_handle": 30,
+      "confidence_score": 0.96,
+      "risk_level": "High",
+      "tags": ["finance", "budget", "approval", "q3"]
+    }
+  },
+  {
+    "id": "email_005",
+    "subject": "HR: Annual Performance Review - Submission Deadline July 15",
+    "sender": "hr@company.com",
+    "sender_name": "Human Resources",
+    "recipients": ["all-employees@company.com"],
+    "date": "2026-06-25T09:00:00Z",
+    "body": "Dear Team Members,\n\nThis is a reminder that the Annual Performance Review cycle is now open.\n\nWhat you need to do:\n1. Complete your self-assessment in Workday (link below)\n2. Submit peer reviews for team members assigned to you\n3. Schedule a 1:1 with your manager to discuss\n\nKey Dates:\n- Self-assessment submission: July 15, 2026\n- Manager reviews due: July 22, 2026\n- Review conversations: July 23 - August 2, 2026\n- Final calibration: August 5, 2026\n\nThe self-assessment form covers: Goal achievement, Core competencies, Impact & results, Development areas, and Goals for next year.\n\nPlease log in to Workday: https://workday.company.com/performance\n\nIf you have questions, contact hr@company.com or your HRBP.\n\nBest regards,\nHR Team",
+    "snippet": "Annual Performance Review cycle is open. Self-assessment deadline July 15, 2026...",
+    "has_attachments": false,
+    "attachments": [],
+    "thread_id": "thread_005",
+    "labels": ["INBOX"],
+    "analysis": {
+      "category": "HR",
+      "priority": "Medium",
+      "sentiment": "informational",
+      "summary": "Annual performance review cycle is open. Must complete self-assessment in Workday by July 15. Also need to submit peer reviews. Review conversations July 23 - August 2.",
+      "action_items": [
+        "Complete self-assessment in Workday by July 15",
+        "Submit peer reviews for assigned team members",
+        "Schedule 1:1 with manager"
+      ],
+      "deadline": {
+        "text": "Self-assessment due July 15, 2026",
+        "date": "2026-07-15",
+        "urgency": "medium"
+      },
+      "meeting_detected": null,
+      "key_entities": ["HR Team", "Workday", "July 15", "July 22"],
+      "requires_response": false,
+      "estimated_time_to_handle": 120,
+      "confidence_score": 0.94,
+      "risk_level": "Low",
+      "tags": ["hr", "performance-review", "deadline"]
+    }
+  },
+  {
+    "id": "email_006",
+    "subject": "URGENT: Client Acme Corp - Critical Feature Request Before Contract Renewal",
+    "sender": "david.walsh@acmecorp.com",
+    "sender_name": "David Walsh (Acme Corp)",
+    "recipients": ["sales@company.com", "cto@company.com"],
+    "date": "2026-06-28T07:30:00Z",
+    "body": "Hi,\n\nI'm reaching out as our contract renewal is coming up on July 31st ($2.4M ARR) and we have a critical blocker.\n\nOur enterprise customers are demanding real-time data sync which your platform currently doesn't support. This is a hard requirement for us to renew. We've seen competitors offering this and our clients are pushing us to switch.\n\nSpecifically, we need:\n1. Real-time webhook notifications (< 500ms latency)\n2. Bi-directional data sync with our CRM (Salesforce)\n3. Custom field mapping\n\nCan we get a commitment by this Friday (July 2) on whether this can be delivered within 90 days? If not, we'll need to begin evaluating alternatives.\n\nI value our 3-year partnership and want to make this work.\n\nDavid Walsh\nCTO, Acme Corp",
+    "snippet": "Contract renewal coming up July 31 ($2.4M ARR). Need real-time webhook notifications as hard requirement...",
+    "has_attachments": false,
+    "attachments": [],
+    "thread_id": "thread_006",
+    "labels": ["INBOX", "UNREAD", "IMPORTANT"],
+    "analysis": {
+      "category": "Customer",
+      "priority": "Critical",
+      "sentiment": "concerned",
+      "summary": "Acme Corp CTO threatening to not renew $2.4M ARR contract unless real-time data sync is committed by July 2. Needs webhooks (<500ms), Salesforce bi-directional sync, and custom field mapping within 90 days.",
+      "action_items": [
+        "Escalate to CTO and sales leadership immediately",
+        "Assess feasibility of real-time webhooks and Salesforce sync",
+        "Respond to David Walsh with commitment/timeline by July 2",
+        "Prepare retention strategy for $2.4M account"
+      ],
+      "deadline": {
+        "text": "Response commitment required by July 2",
+        "date": "2026-07-02",
+        "urgency": "high"
+      },
+      "meeting_detected": null,
+      "key_entities": ["David Walsh", "Acme Corp", "$2.4M ARR", "July 31", "Salesforce"],
+      "requires_response": true,
+      "estimated_time_to_handle": 45,
+      "confidence_score": 0.97,
+      "risk_level": "Critical",
+      "tags": ["customer", "churn-risk", "contract-renewal", "feature-request"]
+    }
+  },
+  {
+    "id": "email_007",
+    "subject": "Technical Issue: Payment API Integration Returning 500 Errors - 23% Failure Rate",
+    "sender": "dev-alerts@company.com",
+    "sender_name": "Dev Monitoring System",
+    "recipients": ["dev-team@company.com", "platform@company.com"],
+    "date": "2026-06-28T06:00:00Z",
+    "body": "Automated Alert: Payment API health check failed.\n\nDetails:\n- Service: payment-api-v2\n- Error Rate: 23% (threshold: 5%)\n- Error Type: HTTP 500 Internal Server Error\n- Affected Endpoint: POST /api/v2/payments/process\n- Duration: 47 minutes (since 05:13 UTC)\n- Impact: ~340 failed payment attempts\n- Revenue Impact: Estimated $42,000 in blocked transactions\n\nError Stack Trace (sample):\nDatabaseConnectionError: Connection pool exhausted\nat PaymentProcessor.execute (payment.service.ts:247)\nat DatabasePool.getConnection (db.pool.ts:89)\n\nSuggested Actions:\n1. Restart payment-api-v2 pods\n2. Check database connection pool settings\n3. Review recent deployments (last deploy: 04:30 UTC)\n\nDashboard: https://monitoring.internal/payment-api",
+    "snippet": "Payment API error rate at 23% (threshold 5%). 340 failed payments, $42K revenue impact since 05:13 UTC...",
+    "has_attachments": false,
+    "attachments": [],
+    "thread_id": "thread_007",
+    "labels": ["INBOX", "UNREAD"],
+    "analysis": {
+      "category": "Technical",
+      "priority": "Critical",
+      "sentiment": "urgent",
+      "summary": "Payment API is failing at 23% error rate due to database connection pool exhaustion. 340 failed payments totaling ~$42K since 05:13 UTC. Likely caused by deployment at 04:30 UTC.",
+      "action_items": [
+        "Restart payment-api-v2 pods immediately",
+        "Increase database connection pool size",
+        "Investigate deployment at 04:30 UTC for breaking changes",
+        "Check monitoring dashboard for trend"
+      ],
+      "deadline": {
+        "text": "Immediate - revenue impact ongoing",
+        "date": "2026-06-28T09:00:00Z",
+        "urgency": "immediate"
+      },
+      "meeting_detected": null,
+      "key_entities": ["payment-api-v2", "$42,000", "DatabaseConnectionError"],
+      "requires_response": true,
+      "estimated_time_to_handle": 30,
+      "confidence_score": 0.99,
+      "risk_level": "Critical",
+      "tags": ["technical", "api-error", "payment", "incident"]
+    }
+  },
+  {
+    "id": "email_008",
+    "subject": "Tech Digest: This Week in AI - GPT-5 Launch, Anthropic Raises $4B, AWS re:Invent Preview",
+    "sender": "newsletter@techdigest.io",
+    "sender_name": "Tech Digest Weekly",
+    "recipients": ["subscriber@company.com"],
+    "date": "2026-06-27T08:00:00Z",
+    "body": "Welcome to this week's Tech Digest!\n\n🤖 AI NEWS\nAnthropic raised another $4B funding round, bringing total valuation to $60B. The company announced Claude 4 with improved reasoning capabilities.\n\nAWS re:Invent Preview: Amazon hinted at 12 new AI/ML services launching at re:Invent 2026, including a new Bedrock feature for real-time RAG.\n\n☁️ CLOUD UPDATES\nAzure announced new sustainability commitments with 100% renewable energy by 2025. Google Cloud released new GPU instances at 40% lower cost.\n\n📱 PRODUCT LAUNCHES\nGitHub Copilot Enterprise now supports custom organizational knowledge bases. Figma released AI-powered design system automation.\n\n🔒 SECURITY\nNew critical vulnerability CVE-2024-9999 found in OpenSSL 3.x. Patch available - update recommended.\n\nRead full articles at techdigest.io\nUnsubscribe | Manage preferences",
+    "snippet": "This week: Anthropic $4B funding, AWS re:Invent preview, Azure sustainability, GitHub Copilot Enterprise updates...",
+    "has_attachments": false,
+    "attachments": [],
+    "thread_id": "thread_008",
+    "labels": ["INBOX"],
+    "analysis": {
+      "category": "Newsletter",
+      "priority": "Low",
+      "sentiment": "informational",
+      "summary": "Weekly tech newsletter covering Anthropic's $4B funding round, AWS re:Invent AI preview, Azure sustainability, and a critical OpenSSL vulnerability CVE-2024-9999 requiring patching.",
+      "action_items": [
+        "Note: OpenSSL critical vulnerability CVE-2024-9999 - verify if systems are affected and patch"
+      ],
+      "deadline": null,
+      "meeting_detected": null,
+      "key_entities": ["Anthropic", "AWS", "OpenSSL", "CVE-2024-9999"],
+      "requires_response": false,
+      "estimated_time_to_handle": 5,
+      "confidence_score": 0.88,
+      "risk_level": "Low",
+      "tags": ["newsletter", "tech-news", "ai", "aws"]
+    }
+  },
+  {
+    "id": "email_009",
+    "subject": "Congratulations! You've Been Selected as a WINNER - Claim $50,000 Now",
+    "sender": "winner@lucky-enterprise-prize.xyz",
+    "sender_name": "Enterprise Prize Committee",
+    "recipients": ["recipient@company.com"],
+    "date": "2026-06-26T22:00:00Z",
+    "body": "CONGRATULATIONS VALUED PROFESSIONAL!\n\nYour business email has been RANDOMLY SELECTED from 10,000,000 enterprise professionals to receive our EXCLUSIVE $50,000 Business Excellence Award!\n\nTo CLAIM your prize:\n1. Click here: http://claim-prize.lucky-xyz.net/claim\n2. Enter your banking details for wire transfer\n3. Pay $299 processing fee via gift cards\n\nThis offer EXPIRES in 24 HOURS! Act NOW!\n\nYour reference: ENT-WIN-88291\nContact: prize@lucky-enterprise-xyz.net\n\nDO NOT IGNORE THIS EMAIL - YOU HAVE WON!",
+    "snippet": "Your email randomly selected to win $50,000! Click to claim prize and provide banking details...",
+    "has_attachments": false,
+    "attachments": [],
+    "thread_id": "thread_009",
+    "labels": ["INBOX", "SPAM"],
+    "analysis": {
+      "category": "Spam",
+      "priority": "Low",
+      "sentiment": "suspicious",
+      "summary": "High-confidence phishing/spam email. Fake prize notification requesting banking details and gift card payment. Classic advance-fee fraud indicators. Sender domain is suspicious (.xyz).",
+      "action_items": [
+        "Mark as spam and delete",
+        "Do NOT click any links or provide any information",
+        "Report to IT security if concerned"
+      ],
+      "deadline": null,
+      "meeting_detected": null,
+      "key_entities": ["lucky-enterprise-prize.xyz", "$50,000", "ENT-WIN-88291"],
+      "requires_response": false,
+      "estimated_time_to_handle": 1,
+      "confidence_score": 0.99,
+      "risk_level": "High",
+      "tags": ["spam", "phishing", "fraud", "delete"]
+    }
+  },
+  {
+    "id": "email_010",
+    "subject": "New Project Proposal - AI-Powered Customer Service Platform",
+    "sender": "innovation@company.com",
+    "sender_name": "Innovation Team",
+    "recipients": ["leadership@company.com"],
+    "date": "2026-06-26T11:00:00Z",
+    "body": "Dear Leadership,\n\nPlease find attached our proposal for an AI-Powered Customer Service Platform. This initiative aims to reduce support costs by 40% while improving customer satisfaction scores by 25%.\n\nKey highlights from the proposal:\n- Implementation timeline: 6 months\n- Estimated investment: $280,000\n- ROI: 18 months\n- Technology stack: AWS Bedrock, Claude AI, React frontend\n- Pilot: Start with top 100 enterprise customers\n\nThe full business case, technical architecture, and risk assessment are in the attached PDF.\n\nWe'd appreciate your feedback and a brief meeting to discuss.\n\nBest,\nInnovation Team",
+    "snippet": "AI-Powered Customer Service Platform proposal. 40% cost reduction, $280K investment, 6-month timeline...",
+    "has_attachments": true,
+    "attachments": [
+      {"name": "AI_Customer_Service_Proposal.pdf", "size": 2048000, "type": "application/pdf"}
+    ],
+    "thread_id": "thread_010",
+    "labels": ["INBOX"],
+    "analysis": {
+      "category": "Project Update",
+      "priority": "Medium",
+      "sentiment": "positive",
+      "summary": "Proposal for AI customer service platform using AWS Bedrock. Claims 40% cost reduction, $280K investment with 18-month ROI. Detailed PDF attached with business case and architecture.",
+      "action_items": [
+        "Review attached PDF proposal",
+        "Provide feedback to innovation team",
+        "Schedule brief discussion meeting"
+      ],
+      "deadline": null,
+      "meeting_detected": null,
+      "key_entities": ["Innovation Team", "$280,000", "AWS Bedrock", "6 months"],
+      "requires_response": true,
+      "estimated_time_to_handle": 30,
+      "confidence_score": 0.91,
+      "risk_level": "Low",
+      "tags": ["proposal", "ai", "customer-service", "innovation"]
+    }
+  },
+  {
+    "id": "email_011",
+    "subject": "Q3 Budget Spreadsheet - Department Allocations (Updated)",
+    "sender": "finance.team@company.com",
+    "sender_name": "Finance Team",
+    "recipients": ["dept-heads@company.com"],
+    "date": "2026-06-25T14:00:00Z",
+    "body": "Hi Department Heads,\n\nPlease find the updated Q3 budget allocation spreadsheet attached. Key changes from last version:\n\n- Engineering: Increased by $50K (approved by CFO)\n- Marketing: Reduced by $20K (campaign delays)\n- HR: Unchanged\n- Product: New $30K line item for UX research\n\nPlease review your department's allocation, add any notes/justifications, and return by June 30.\n\nSummary totals are on the 'Dashboard' tab. Detailed breakdowns on individual department tabs.\n\nThanks,\nFinance Team",
+    "snippet": "Updated Q3 budget spreadsheet. Engineering +$50K, Marketing -$20K. Return with notes by June 30...",
+    "has_attachments": true,
+    "attachments": [
+      {"name": "Q3_Budget_Allocations_v3.xlsx", "size": 512000, "type": "application/xlsx"}
+    ],
+    "thread_id": "thread_011",
+    "labels": ["INBOX", "UNREAD"],
+    "analysis": {
+      "category": "Finance",
+      "priority": "High",
+      "sentiment": "professional",
+      "summary": "Updated Q3 budget spreadsheet. Engineering got $50K increase, Marketing cut $20K, new $30K UX research budget. Need to review and return with notes by June 30.",
+      "action_items": [
+        "Review Q3_Budget_Allocations_v3.xlsx",
+        "Add department notes and justifications",
+        "Return updated spreadsheet by June 30"
+      ],
+      "deadline": {
+        "text": "Return spreadsheet by June 30",
+        "date": "2026-06-30",
+        "urgency": "high"
+      },
+      "meeting_detected": null,
+      "key_entities": ["Finance Team", "$50K", "$20K", "June 30"],
+      "requires_response": true,
+      "estimated_time_to_handle": 20,
+      "confidence_score": 0.93,
+      "risk_level": "Low",
+      "tags": ["finance", "budget", "q3", "spreadsheet"]
+    }
+  },
+  {
+    "id": "email_012",
+    "subject": "[Thread 1/3] Project Delivery: Initial Proposal for August 15 Deadline",
+    "sender": "vendor@techpartner.com",
+    "sender_name": "Alex Rivera (TechPartner)",
+    "recipients": ["pm@company.com"],
+    "date": "2026-06-24T10:00:00Z",
+    "body": "Hi,\n\nFollowing our last call, I'm putting forward a formal proposal for Project Nexus delivery.\n\nOur proposal:\n- Delivery Date: August 15, 2026\n- Total Cost: $420,000\n- Team: 8 engineers + 1 PM\n- Includes: Development, testing, documentation, 90-day support\n\nThis timeline accounts for the complexity of the integration work. I believe August 15 is realistic given the scope.\n\nLooking forward to your thoughts.\n\nBest,\nAlex Rivera\nSenior Partner, TechPartner",
+    "snippet": "Proposal for Project Nexus: August 15 delivery, $420K, 8 engineers. Looking forward to your thoughts...",
+    "has_attachments": false,
+    "attachments": [],
+    "thread_id": "thread_012",
+    "labels": ["INBOX"],
+    "analysis": {
+      "category": "Project Update",
+      "priority": "Medium",
+      "sentiment": "professional",
+      "summary": "TechPartner proposing August 15 delivery for Project Nexus at $420K with 8 engineers. Includes 90-day support. First email in negotiation thread.",
+      "action_items": ["Review proposal and respond with counter-offer or acceptance"],
+      "deadline": {
+        "text": "Proposed delivery: August 15, 2026",
+        "date": "2026-08-15",
+        "urgency": "medium"
+      },
+      "meeting_detected": null,
+      "key_entities": ["Alex Rivera", "TechPartner", "$420,000", "August 15"],
+      "requires_response": true,
+      "estimated_time_to_handle": 15,
+      "confidence_score": 0.89,
+      "risk_level": "Medium",
+      "tags": ["vendor", "proposal", "negotiation", "project-nexus"]
+    }
+  },
+  {
+    "id": "email_013",
+    "subject": "[Thread 2/3] Re: Project Delivery - Counter-proposal: July 31 with phased delivery",
+    "sender": "pm@company.com",
+    "sender_name": "Jennifer Park (PM)",
+    "recipients": ["vendor@techpartner.com"],
+    "date": "2026-06-25T14:30:00Z",
+    "body": "Hi Alex,\n\nThank you for the detailed proposal. After reviewing with our leadership:\n\nOur counter-proposal:\n- Phase 1 (Core features): July 31, 2026\n- Phase 2 (Advanced features): August 31, 2026\n- Budget: $380,000 (we can meet in the middle at $400K if needed)\n- Team: 10 engineers (we'd like additional resources for Phase 1)\n\nThe July 31 Phase 1 deadline is firm - we have a board presentation on August 1st and need working software to demo.\n\nCan you accommodate this phased approach?\n\nBest,\nJennifer Park\nProject Manager",
+    "snippet": "Counter-proposal: Phase 1 by July 31 (firm - board presentation), Phase 2 by August 31. Budget $380-400K...",
+    "has_attachments": false,
+    "attachments": [],
+    "thread_id": "thread_012",
+    "labels": ["SENT"],
+    "analysis": {
+      "category": "Project Update",
+      "priority": "Medium",
+      "sentiment": "professional",
+      "summary": "Counter-proposal with phased delivery: Phase 1 July 31 (firm for board demo), Phase 2 August 31. Budget $380-400K. Requests 10 engineers.",
+      "action_items": ["Await vendor response to counter-proposal"],
+      "deadline": {
+        "text": "Phase 1 deadline: July 31 (firm)",
+        "date": "2026-07-31",
+        "urgency": "medium"
+      },
+      "meeting_detected": null,
+      "key_entities": ["Jennifer Park", "July 31", "August 1", "$380,000"],
+      "requires_response": false,
+      "estimated_time_to_handle": 5,
+      "confidence_score": 0.90,
+      "risk_level": "Medium",
+      "tags": ["vendor", "counter-proposal", "negotiation", "project-nexus"]
+    }
+  },
+  {
+    "id": "email_014",
+    "subject": "[Thread 3/3] AGREED: Project Nexus - Phased Delivery Confirmed",
+    "sender": "vendor@techpartner.com",
+    "sender_name": "Alex Rivera (TechPartner)",
+    "recipients": ["pm@company.com"],
+    "date": "2026-06-26T09:00:00Z",
+    "body": "Hi Jennifer,\n\nWe accept the phased delivery approach.\n\nFINAL AGREED TERMS:\n✅ Phase 1: July 31, 2026 - Core features\n✅ Phase 2: August 31, 2026 - Advanced features\n✅ Total Cost: $400,000 (split: $240K Phase 1 + $160K Phase 2)\n✅ Team: 10 engineers + 1 PM\n✅ Includes: Development, testing, documentation, 90-day support\n\nNext steps:\n1. Legal to review and sign contract (by June 28)\n2. Kick-off meeting: July 1, 9 AM EST\n3. Access credentials to be shared by June 30\n\nPlease send the contract to legal@techpartner.com\n\nLooking forward to working together!\n\nAlex Rivera",
+    "snippet": "AGREED: Phased delivery confirmed. Phase 1 July 31 ($240K), Phase 2 August 31 ($160K). Contract by June 28...",
+    "has_attachments": false,
+    "attachments": [],
+    "thread_id": "thread_012",
+    "labels": ["INBOX"],
+    "analysis": {
+      "category": "Project Update",
+      "priority": "High",
+      "sentiment": "positive",
+      "summary": "Project Nexus deal finalized. $400K total, Phase 1 July 31 ($240K), Phase 2 August 31 ($160K). 10 engineers. Kick-off July 1. Contract needs to go to legal by June 28.",
+      "action_items": [
+        "Send contract to legal@techpartner.com by June 28",
+        "Prepare for kick-off meeting July 1 at 9 AM EST",
+        "Share access credentials by June 30"
+      ],
+      "deadline": {
+        "text": "Contract to legal by June 28",
+        "date": "2026-06-28",
+        "urgency": "immediate"
+      },
+      "meeting_detected": {
+        "title": "Project Nexus Kick-off Meeting",
+        "date": "2026-07-01",
+        "start_time": "09:00",
+        "end_time": "10:00",
+        "timezone": "EST",
+        "location": "TBD",
+        "attendees": ["pm@company.com", "vendor@techpartner.com"],
+        "agenda": ["Project kick-off", "Team introductions", "Timeline review"],
+        "requires_confirmation": false
+      },
+      "key_entities": ["Alex Rivera", "TechPartner", "$400,000", "July 1", "June 28"],
+      "requires_response": true,
+      "estimated_time_to_handle": 20,
+      "confidence_score": 0.95,
+      "risk_level": "Low",
+      "tags": ["vendor", "agreement", "contract", "project-nexus"]
+    }
+  },
+  {
+    "id": "email_015",
+    "subject": "Calendar Conflict Alert: Board Meeting & All-Hands Overlap July 1 9-10 AM",
+    "sender": "calendar-bot@company.com",
+    "sender_name": "Calendar System",
+    "recipients": ["executives@company.com"],
+    "date": "2026-06-28T07:00:00Z",
+    "body": "⚠️ Calendar Conflict Detected\n\nYou have two overlapping meetings scheduled:\n\nMeeting 1:\n- Title: Q2 Board of Directors Meeting\n- Time: July 1, 2026, 9:00 AM - 11:00 AM EST\n- Location: Boardroom A (Floor 12)\n- Organizer: board-secretary@company.com\n- Attendees: 12 executives + board members\n- Status: Confirmed\n\nMeeting 2:\n- Title: Company All-Hands Q2 Review\n- Time: July 1, 2026, 9:00 AM - 10:30 AM EST\n- Location: Main Auditorium / Livestream\n- Organizer: ceo@company.com\n- Attendees: All 847 employees\n- Status: Confirmed\n\nAction Required: Please resolve this conflict by rescheduling one of these meetings or delegating attendance.\n\nNote: The Board Meeting has priority per company policy.",
+    "snippet": "⚠️ Calendar conflict: Board Meeting AND All-Hands both scheduled July 1, 9-10 AM EST...",
+    "has_attachments": false,
+    "attachments": [],
+    "thread_id": "thread_015",
+    "labels": ["INBOX", "UNREAD", "IMPORTANT"],
+    "analysis": {
+      "category": "Meeting",
+      "priority": "High",
+      "sentiment": "urgent",
+      "summary": "Calendar conflict: Q2 Board Meeting and Company All-Hands both on July 1 at 9 AM EST. Board Meeting takes priority per policy. Need to resolve before July 1.",
+      "action_items": [
+        "Resolve calendar conflict - Board Meeting has priority",
+        "Arrange delegate for All-Hands or reschedule",
+        "Notify CEO's office of the conflict"
+      ],
+      "deadline": {
+        "text": "Resolve before July 1, 2026",
+        "date": "2026-07-01T09:00:00Z",
+        "urgency": "high"
+      },
+      "meeting_detected": {
+        "title": "Q2 Board of Directors Meeting",
+        "date": "2026-07-01",
+        "start_time": "09:00",
+        "end_time": "11:00",
+        "timezone": "EST",
+        "location": "Boardroom A (Floor 12)",
+        "attendees": ["board-secretary@company.com", "executives@company.com"],
+        "agenda": ["Q2 Review", "Board presentations"],
+        "requires_confirmation": false,
+        "conflict": true
+      },
+      "key_entities": ["Board of Directors", "All-Hands", "July 1", "CEO"],
+      "requires_response": true,
+      "estimated_time_to_handle": 15,
+      "confidence_score": 0.97,
+      "risk_level": "Medium",
+      "tags": ["calendar", "conflict", "board-meeting", "all-hands"]
+    }
+  }
+]
